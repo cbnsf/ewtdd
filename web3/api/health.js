@@ -1,0 +1,8 @@
+// api/health.js
+export default function handler(req, res) {
+  res.status(200).json({ 
+    status: 'ok',
+    message: 'Server is running with ES Modules',
+    timestamp: new Date().toISOString()
+  });
+}
